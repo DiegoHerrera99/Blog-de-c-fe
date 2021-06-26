@@ -76,3 +76,65 @@ img{
 .centrar-texto{
     text-align: center;
 }
+
+/*--------------------- HEADER ---------------------*/
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.header__texto{
+    color: var(--blanco);
+}
+
+@media (min-width: 768px){
+   .header__texto{
+       margin-top: 15rem;
+   }
+}
+
+/*---------------------- LOGO ----------------------*/
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo__normal{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+/*--------------------NAVEGACIÓN -------------------*/
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+   .navegacion{
+       flex-direction: row;
+       gap: 2rem;
+   }
+}
+
+.navegacion__enlace{
+    color: var(--blanco);
+}
+
